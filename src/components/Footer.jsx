@@ -16,8 +16,7 @@ const Footer = () => {
            ACTIVE LEARNING CDC
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
-            Therapeutic Innovative Centre for Kids <br />
-            Learning, Enhancement & Support
+            Active learning Child therapy Center
           </p>
         </div>
 
@@ -34,7 +33,7 @@ const Footer = () => {
           </p>
 
           <p className="text-sm mt-2">
-            contact@tickleschildtherapy.com
+            activelearningcdc@gmail.com
           </p>
         </div>
 

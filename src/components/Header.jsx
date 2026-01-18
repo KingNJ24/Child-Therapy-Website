@@ -1,22 +1,57 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   const [active, setActive] = useState("Home");
   const [showServices, setShowServices] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const menuItems = ["Home", "About Us", "Services", "Gallery", "Blog", "Contact Us"];
 
+    useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // scrolling down → hide header
+        setShowHeader(false);
+      } else {
+        // scrolling up → show header
+        setShowHeader(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="w-full bg-[#181a1b] text-white shadow-sm relative z-50">
+   <header
+      className={`
+        fixed top-0 left-0 w-full z-50
+        bg-white/60 backdrop-blur-md
+        border-b border-slate-200/40
+        transition-transform duration-300 ease-in-out
+        ${showHeader ? "translate-y-0" : "-translate-y-full"}
+      `}
+    >
+
+
+
+
+
+
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-4">
 
         {/* LOGO */}
         <div className="flex items-center gap-2">
           <img
-            src="ChatGPT Image Dec 7, 2025, 03_00_49 AM.png"
-            alt="Active Learning CDC"
-            className="h-14 object-contain"
+            src="WhatsApp Image 2025-12-14 at 3.45.03 PM.jpeg"
+            alt="Logo"
+            className="h-24 object-contain"
           />
         </div>
 
@@ -59,9 +94,9 @@ export default function Header() {
                     <h4 className="font-semibold mb-3 text-blue-600">Therapies</h4>
                     <ul className="space-y-2 text-sm">
                       <li>Occupational Therapy</li>
-                      <li>Speech Therapy</li>
-                      <li>Physical Therapy</li>
-                      <li>Behavior Therapy</li>
+                      <li>Paediatric Physiotherapy</li>
+                      <li>special Education Therapy</li>
+                      <li>Speech  & Language Therapy</li>
                     </ul>
                   </div>
 

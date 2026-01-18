@@ -22,7 +22,7 @@ import ContactForm from "./components/ContactForm";
   return (
     <>
       <Header />
-     
+      <div className="pt-28">
        <Hero image={heroImg} onContactClick={handleContact} />
        <AboutUs image={aboutImage} />
        {/* NAVBAR SECTION */}
@@ -35,13 +35,7 @@ import ContactForm from "./components/ContactForm";
           color: "white",
         }}
       >
-        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-          Home
-        </Link>
-
-        <Link to="/about" style={{ color: "white", textDecoration: "none" }}>
-          About Us
-        </Link>
+        
       </nav>
 
       {/* PAGE ROUTES SECTION */}
@@ -53,6 +47,7 @@ import ContactForm from "./components/ContactForm";
     <Testimonials/>
     <ContactForm/>
     <Footer />
+    </div>
     </>
   );
 }
