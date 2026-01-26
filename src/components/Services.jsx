@@ -8,13 +8,13 @@ export default function Services() {
       
     },
     {
-      title: "Cerebral Palsy Therapy",
-      desc: "Physical therapy helps children improve muscle strength, balance, coordination, and endurance for better mobility and daily functioning.",
+      title: "Occupational Therapy",
+      desc: "Our Occupational Therapy program helps children improve fine motor skills, sensory processing, focus, behavior, daily living activities and school readiness. OT supports independence in everyday life.",
       
     },
     {
       title: "DMI Therapy(Dynamic Movement Intervention)",
-      desc: "Sensory integration therapy helps children process sensory information effectively to improve learning, behavior, and daily life skills.",
+      desc: "DMI (Dynamic Movement Intervention) is an advanced physiotherapy approach that helps children improve posture control, strength, balance reactions and movement transitions. It is highly effective for improving gross motor milestones.",
       
     },
     {

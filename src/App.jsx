@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Services from "./components/services";
 import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
+import DoctorScroll from "./components/DoctorScroll";
+import Stats from "./components/Stats";
 
 
  export default function App() {
@@ -43,6 +45,8 @@ import ContactForm from "./components/ContactForm";
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<AboutUsPage />} />
     </Routes>
+    <DoctorScroll/>
+    <Stats/>
     <Services/>
     <Testimonials/>
     <ContactForm/>
