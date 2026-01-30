@@ -31,6 +31,11 @@ const services = [
     desc: "Our hand function program improves finger strength, grip, coordination, dexterity and fine motor control, helping children perform school and daily activities confidently.",
     slug: "Hand-Function",
   },
+  {
+    title: "Speech Therapy",
+    desc: "Our Speech Therapy helps children improve speech clarity, language development, communication skills, understanding, and oral motor functions. We help children speak confidently and interact better socially.",
+    slug: "Speech-Therapy",
+  },
 ];
 
 export default function Services() {
