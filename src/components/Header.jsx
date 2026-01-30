@@ -45,13 +45,14 @@ export default function Header() {
 
 
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-4">
+         
 
         {/* LOGO */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-shrink-0">
           <img
             src="WhatsApp Image 2025-12-14 at 3.45.03 PM.jpeg"
             alt="Logo"
-            className="h-24 object-contain"
+            className="h-20"
           />
         </div>
 

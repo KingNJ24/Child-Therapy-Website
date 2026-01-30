@@ -21,6 +21,16 @@ const services = [
     desc: "Our Special Education program supports children who need help with learning skills, attention, academic foundation, communication and behavior management. We create individualized learning plans to help children achieve better performance in school and daily life.",
     slug: "Special-Education",
   },
+  {
+    title: "Early Intervention Program",
+    desc: "Our Early Intervention Program is designed for children aged 0–6 years to support early development in motor milestones, speech, sensory integration, behavior and learning skills. Early therapy gives the best long-term results.",
+    slug: "Early-Intervention",
+  },
+  {
+    title: "Hand Function & Fine Motor Training",
+    desc: "Our hand function program improves finger strength, grip, coordination, dexterity and fine motor control, helping children perform school and daily activities confidently.",
+    slug: "Hand-Function",
+  },
 ];
 
 export default function Services() {
